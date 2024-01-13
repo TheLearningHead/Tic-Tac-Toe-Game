@@ -114,13 +114,10 @@ while True:
     if chance == "user":
         user_move = int(input("Enter your move position: "))
         if user_move in available_moves(positions):
-            for row in range(3):
-                for column in range(3):
-                    if positions[row][column] == user_move:
-                        positions[row][column] = "X"
-                        pattern[row][column] = "X"
-                        display(pattern)
-                        print()
+            make_move(positions, pattern, user_move, "X")
+            make_move(positions, positions, user_move, "X")
+            display(pattern)
+            print()
 
             if check_winner(pattern, "X"):
                 print("Congratulations! You win!")
@@ -147,13 +144,10 @@ while True:
         print(".")
         time.sleep(0.3)
         ai_position = ai_move(positions, pattern)
-        for row in range(3):
-            for column in range(3):
-                if positions[row][column] == ai_position:
-                    positions[row][column] = "O"
-                    pattern[row][column] = "O"
-                    display(pattern)
-                    print()
+        make_move(positions, pattern, ai_position, "O")
+        make_move(positions, positions, ai_position, "O")
+        display(pattern)
+        print()
 
         if check_winner(pattern, "O"):
             print("AI wins!")
