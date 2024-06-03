@@ -39,55 +39,55 @@ Before you begin, ensure you have met the following requirements:
 
 ### Example Gameplay:
 ```
-The position for each box is as follows:
- | 1 | 2 | 3 |
- | 4 | 5 | 6 |
- | 7 | 8 | 9 |
-
-Do you wish to start the game? (Y/N): Y
+The position for each box is as follows : 
+ | 1 | 2 | 3 | 
+ | 4 | 5 | 6 | 
+ | 7 | 8 | 9 | 
+Do you wish to start the game?(Y/N) : Y
 Enter your move position: 5
-
- |   |   |   |
- |   | X |   |
- |   |   |   |
-
-AI player is thinking...
- |   |   |   |
- |   | X |   |
- |   |   | O |
-
-Enter your move position: 1
-
- | X |   |   |
- |   | X |   |
- |   |   | O |
+ |   |   |   | 
+ |   | X |   | 
+ |   |   |   | 
 
 AI player is thinking...
- | X |   |   |
- |   | X |   |
- | O |   | O |
+ | O |   |   | 
+ |   | X |   | 
+ |   |   |   | 
+
+Enter your move position: 7
+ | O |   |   | 
+ |   | X |   | 
+ | X |   |   | 
+
+AI player is thinking...
+ | O |   | O | 
+ |   | X |   | 
+ | X |   |   | 
+
+Enter your move position: 2
+ | O | X | O | 
+ |   | X |   | 
+ | X |   |   | 
+
+AI player is thinking...
+ | O | X | O | 
+ |   | X |   | 
+ | X | O |   | 
+
+Enter your move position: 6
+ | O | X | O | 
+ |   | X | X | 
+ | X | O |   | 
+
+AI player is thinking...
+ | O | X | O | 
+ | O | X | X | 
+ | X | O |   | 
 
 Enter your move position: 9
+ | O | X | O | 
+ | O | X | X | 
+ | X | O | X | 
 
- | X |   |   |
- |   | X |   |
- | O |   | O |
-
-AI player is thinking...
- | X |   | O |
- |   | X |   |
- | O |   | O |
-
-Enter your move position: 3
-
- | X |   | O |
- |   | X |   |
- | O |   | O |
-
-AI player is thinking...
- | X | X | O |
- |   | X |   |
- | O |   | O |
-
-Congratulations! You win!
+Its a tie!
 ```
